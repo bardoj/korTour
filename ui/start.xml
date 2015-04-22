@@ -23,7 +23,7 @@
 			<WINDOW align="linear:subCenter">
 				<BUTTON layout="60,45" text="팝업" pressedImg="#cc0033" onClick="device.toastPopup('서빈아,사랑해!')" />
 				<BUTTON layout="60,45" text="팝업2" onClick="device.systemPopup('은주야,사랑해!')" />
-				<BUTTON layout="60,45" text="함수호출" onClick="caller.text = function.compare(10,15)" />
+				<BUTTON layout="60,45" text="함수호출" onClick="caller.text = function.comparex(10,15)" />
 			</WINDOW>
 			
 			<WINDOW layout="300,350" align="relative">
@@ -91,7 +91,7 @@
 		<RETURN cmd="false"/>
 	</FUNCTION>
 	
-	<FUNCTION id="compare(a,b)">
+	<FUNCTION id="comparex(a,b)">
 		<CMD condition="a gt b" cmd="'a가 큽니다'" elseCmd="'b가큽니다'" />
 	</FUNCTION>
 	
