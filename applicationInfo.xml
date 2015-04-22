@@ -11,5 +11,5 @@
 		<START url="ui/start.xml" /> 
 		<ORIENTATION type="defaultPortrait" />
 	</APPLICATIONINFO>
-</MOML>
+</MOML> 
 
