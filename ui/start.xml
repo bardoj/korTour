@@ -9,7 +9,7 @@
 			<LABEL text="관광정보 검색 : "/>
 			
 			<WINDOW align="linear:subCenter">
-				<LABEL text="지역 : " />
+				<LABEL text="지역 : " /> 
 				<SPINNER id="area" layout="135,40" title="지역" dataList="//item" valuePath=".//code/text()" textPath=".//name/text()" onChange="function.updateSigungu(caller.value)"/>
 				<SPINNER id="sigungu" layout="135,40" title="시/군/구" dataList="//item" valuePath=".//code/text()" textPath=".//name/text()"/>
 			</WINDOW>
