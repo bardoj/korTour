@@ -8,7 +8,7 @@
 		<WINDOW layout="0,0,320,480" img="white" align="linear:vertical" padding="10,20,10,0">
 			<LABEL text="관광정보 검색 : "/>
 			
-			<WINDOW align="linear:vertical"> 
+			<WINDOW align="linear:subCenter"> 
 				<LABEL text="지역 : " layout="100,50" textAlign="center" textColor="#cc0033" fontSize="30" ellipsis="end" multiLine="false" /> 
 				<SPINNER id="area" layout="135,50" title="지역" dataList="//item" valuePath=".//code/text()" textPath=".//name/text()" onChange="function.updateSigungu(caller.value)"/>
 				<SPINNER id="sigungu" layout="135,50" title="시/군/구" dataList="//item" valuePath=".//code/text()" textPath=".//name/text()"/>
@@ -18,6 +18,8 @@
 				<LABEL text="타입 : " /> 
 				<SPINNER id="contentType" layout="150,50" title="타입" dataSource="contentTypeIds.xml" dataList="//item" valuePath=".//code/text()" textPath=".//name/text()"/>
 				<BUTTON layout="60,50" text="검색" onClick="function.search" />
+				<BUTTON layout="60,50" text="팝업" pressedImg="#cc0033" onClick="device.toastPopup('서빈아,사랑해!)" />
+				<BUTTON layout="60,50" text="팝업" onClick="device.systemPopup('은주야아,사랑해!)" />
 			</WINDOW>
 			
 			<WINDOW layout="300,350" align="relative">
