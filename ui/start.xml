@@ -92,7 +92,7 @@
 	</FUNCTION>
 	
 	<FUNCTION id="compare(a,b)">
-		<CMD condition="a gt b" cmd="''a가 큽니다" elseCmd='b가큽니다'" />
+		<CMD condition="a gt b" cmd="'a가 큽니다'" elseCmd='b가큽니다'" />
 	</FUNCTION>
 	
 	<FUNCTION id="search">
